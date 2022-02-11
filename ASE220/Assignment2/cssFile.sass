@@ -1,0 +1,234 @@
+
+$color-bone: #f0ead6
+$font-Silian-Rail: 'Cormorant Garamond', serif
+
+html
+    height: 100%
+    line-height: 1.8
+    background-color: $color-bone
+    font-family: $font-Silian-Rail
+
+body{
+    background-color: $color-bone
+    height: 1000px
+
+header{
+    @extend body
+    height: 240px
+
+footer{
+    @extend body
+    height: 300px
+
+.RandomLogo
+    height: 80px
+    display: inline
+    float: left
+
+.navItem
+    display: inline
+    float: right
+
+.btnNav
+    @extend .frame
+    padding: 15px 32px
+    padding-left: 20px
+    padding-right: 20px
+    font-size: 20px
+    background-color: black
+
+.frame
+    border: 1px solid black
+    text-align: center
+    text-decoration: none
+    display: inline-block
+    font-size: auto
+    font-weight: bold
+    color: black
+    background-color: $color-bone
+
+.width80
+    width: 80px
+
+.center
+    vertical-align: center
+
+    text-align: center
+
+    align-items: center
+
+.blackBorder
+    border: 1px solid black
+    width: 50%
+    padding: 10px
+
+.flex
+    display: flex
+    justify-content: space-between
+
+    &-column
+        flex-direction: column
+
+    &-row
+        flex-direction: row
+
+    &-reverse-row
+        flex-direction: row-reverse
+
+    &-end
+        justify-content: end
+
+    &-content-wrapper
+        flex-wrap: wrap
+        justify-content: space-evenly
+    &-space-evenly
+        justify-content: space-evenly
+
+    & > div
+
+.padded10
+    padding: 10px
+
+.margin5
+    margin: 5
+
+.contentItem
+    width: 200px
+    position: relative
+    display: flex
+    flex-direction: column
+    word-wrap: break-word
+    border: 1px solid black
+    border-radius: 0.25rem
+    background-color: #e7e7e7
+    margin-bottom: 10px
+
+    &Body
+        flex: auto
+
+.contentImg
+    height: 300px
+    width: 200px
+
+.content
+    justify-content: space-evenly
+
+/*this is copied code*/
+.wrapper
+    display: flex
+    justify-content: space-between
+
+.content,
+.menu
+    border: 3px solid black
+    padding: 15px
+    background-color: #fff
+
+.content
+    width: 75%
+
+.menu
+    width: 15%
+    height: 550px
+
+    &
+
+        position: sticky
+        top: 0
+
+.margin-auto-left
+    margin-left: auto
+
+.margin-auto-right
+    margin-right: auto
+
+.margin-auto-top
+
+    margin-top: auto
+
+.margin-auto-botton
+    margin-bottom: auto
+
+a:link
+    font-style: none
+    background-color: black
+    color: white
+
+a:visited
+    background-color: aqua
+    color: black
+
+a:hover
+    background-color: aquamarine
+    color: black
+
+a:active
+    background-color: red
+    color: black
+
+.bold
+    font-weight: bold
+
+.padding-top-50
+    padding-top: 70px
+
+.padding-left-40
+    padding-left: 40px
+
+.padding-right-40
+    padding-right: 40px
+
+.padding-bottom-40
+    padding-bottom: 40px
+
+@media only screen and (max-width: 740px)
+    .wrapper
+        display: flex
+        flex-direction: column
+
+    .content
+        width: 100%
+
+    .menu
+        width: 100%
+        position: relative
+        top: 0
+
+        //I don't know if I can @extend .btnNav to get the original .btnNav
+    nav .btnNav
+        margin: auto
+        padding: auto
+        text-align: center
+        text-decoration: none
+        display: inline-block
+        font-size: 20px
+        font-weight: bold
+        color: black
+        background-color: white
+
+    #nav
+        flex-direction: column
+
+    h1
+        font-size: 20px
+    a:link
+        font-style: none
+        background-color: black
+        color: white
+
+    a:visited
+        background-color: aqua
+        color: black
+
+    a:hover
+        background-color: aquamarine
+        color: black
+
+    a:active
+        background-color: red
+        color: black
+    .flex
+        justify-content: center
+
+    .margin-auto-right
+        margin: auto

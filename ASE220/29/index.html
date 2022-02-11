@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <table>
+            <tr>
+                <td id="Ok" name = "firstcell">Ok</td> 
+                 
+            </tr>  
+        </table>
+        <script>
+            document.querySelectorAll("td[name=firstcell]")[0].innerHtml='<em>KOKasopdfkasdpsoadfkpoafk</em>';
+            console.log(document.querySelectorAll("td[name=firstcell]")[0].innerText);
+            let paragraph = document.createElement('p');
+            paragraph.innerText = "ok";
+            document.body.append(paragraph)
+            
+        </script>
+    </body> 
+</html>

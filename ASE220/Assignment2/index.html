@@ -1,102 +1,270 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="cssFile.css">
-    
-    </head>
 
-    <header>
-        <nav>
-            <ul class="navUl">
-                <li><img src ="Images/Logo_NIKE.svg.png" class = "RandomLogo" alt ="RandomLogo"></li>
-                <li class="navItem btnNav"><a href="#home">Home</a></li>
-                <li class="navItem btnNav"><a href="#news">News</a></li>
-                <li class="navItem btnNav"><a href="#contact">Contact</a></li>
-                <li class="navItem btnNav"><a href="#about">About</a></li>
-              </ul>
-        </nav> 
-    </header> 
+<head>
+    <link rel="stylesheet" href="cssFile.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,700&display=swap"
+        rel="stylesheet">
+</head>
+<header>
+    <nav>
 
-    <body>
-            <h1 class ="center blackBorder">Title</h1> 
-        <div class="flex">
-            <div class="split left">    
-                    <h3 class ="padded10 center">Filter Menu</h3>
-                    <div class = "flex-column">
-
-                        <div class = "center flexgrow">
-                            <label for="Text-field"></label>Label<br>
-                            <input class ="center padded10" type="text" id = "Text-field" name = "Text-field">           
-                        </div>
-                        
-                        
-                        <div class = "center flexgrow">
-                            <label class ="padded10" for="Select-box">Select Box</label><br>
-                                <select class ="center padded10" id="cars" name="cars">
-                                <option value="volvo">Volvo</option>
-                                <option value="saab">Saab</option>
-                                <option value="fiat">Fiat</option>
-                                <option value="audi">Audi</option>
-                                </select>
-                        </div>
-
-                        <div class = "center flexgrow">
-                            <label class ="padded10" for="Select-box">Select Box</label><br>
-                                <select class ="center padded10" id="cars" name="cars">
-                                <option value="volvo">Volvo</option>
-                                <option value="saab">Saab</option>
-                                <option value="fiat">Fiat</option>
-                                <option value="audi">Audi</option>
-                                </select>
-                        </div>
-
-
-                        <div class = "center flexgrow">
-                            <label for="Text-field"></label>Radio<br>
-                            <input type="radio"  name="Radio1">
-                            <input type="radio"  name="Radio2">    
-                        </div>
-
-                        <div class ="flex-bottom center flexgrow">
-                            <input class ="center padded10"  value="Submit"><br>
-                            <input class ="center padded10" value="Clear">
-
-                        </div>
-                    </div>            
+        <div class="flex flex-row flex-end padding-top-50 padding-right-40 padding-left-40" id = "nav">
+            <div class="margin-auto-right"><img src="Images/Logo_NIKE.svg.png" class="RandomLogo margin5 padding-bottom-40" ID="RandomLogo">
             </div>
+            <div class ="flex flex row">
+                <div><a class="navItem btnNav">nohref</a></div>
+                <div><a class="navItem btnNav" href="index.html">Contact</a></div>
+                <div><a class="navItem btnNav" href="index.html">Home</a></div>
+            </div>
+        </div>
+    </nav>
+</header>
 
-            <div class ="split right">
-                    
-                <h3 class ="padded10 center">Content</h3>
-                <div class ="flex content">
+<body>
+    <div><h1 class="center borderBlack">This is a collection of green pokemon</h1></div>
+    <div class="wrapper">
+        <div class="menu">
+
+            <h2 class="padded10 center">Filter Menu</h2>
+            <div class=" flex flex-column">
+
+                <div class="center">
+                    <div><label for="Label" class="padded10 margin5 bold frame width80">Label</label></div>
+                    <div><input class="center width80" type="text" id="Text-field" name="Text-field"></div>
+                </div>
+
+
+                <div class="center">
+                    <label class="padded10 margin5 bold frame width80" for="Select-box">Select Pokemon</label><br>
+                    <select class="center" id="cars" name="cars">
+                        <option value="Green Pokemon">Green Pokemon</option>
+                        <option value="saab">Green Pokemon</option>
+                        <option value="fiat">Green Pokemon</option>
+                        <option value="audi">Green Pokemon</option>
+                    </select>
+                </div>
+
+                <div class="center">
+                    <label class="padded10 margin5 bold frame width80" for="Select-box">Select Box</label><br>
+                    <select class="center " id="cars" name="cars">
+                        <option value="volvo">Green Pokemon</option>
+                        <option value="saab">Green Pokemon</option>
+                        <option value="fiat">Green Pokemon</option>
+                        <option value="audi">Green Pokemon</option>
+                    </select>
+                </div>
+
+
+                <div class="center">
+                    <label for="Text-field" class="padded10 margin5 bold frame width80">Radio buttons</label><br>
+                    <input type="radio" name="Radio1">
+                    <input type="radio" name="Radio2">
+                </div class="center">
+
+                <div class="margin-auto-top center">
+                    <input class="center width80" value="Submit"><br>
+                    <input class="center width80" value="Clear">
+                </div>
+
+            </div>
+        </div>
+        <div class="content">
+            <h2 class="padded10 center">Content</h2>
+            <div class="flex-column">
+
+                <div class="flex flex-content-wrapper flex-space-evenly">
                     <div class="contentItem">
-                    <img src="Images/pokemon.jpg" class="contentImg" alt="...">
-                        
-                        <div class="contentItemBody">
-                            <h5 class= "center">Green Pokemon</h5>
-                            <h1 class ="center">Title</h1> 
-                            <div class ="center">
-                                <input class ="center" type="submit" value="but2">
-                                <input class ="center" type="submit" value="but1">
+                        <img src="Images/pokemon.jpg" class="contentImg" alt="pokemon">
+
+                        <div class="contentItemBody flex flex-column">
+                            <h5 class="center">Green Pokemon</h5>
+                            <h3 class="center">First line<br>Second line</h3>
+                            <div class="center margin-auto-top">
+                                <a class="btnNav center" href="index.html">Button1</a>
+                                <a class="btnNav center" href="index.html">Button2</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contentItem">
+                        <img src="Images/pokemon.jpg" class="contentImg" alt="pokemon">
+
+                        <div class="contentItemBody flex flex-column">
+                            <h5 class="center">Green Pokemon</h5>
+                            <h3 class="center">First line<br>Second line</h3>
+                            <div class="center margin-auto-top">
+                                <a class="btnNav center" href="index.html">Button1</a>
+                                <a class="btnNav center" href="index.html">Button2</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contentItem">
+                        <img src="Images/pokemon.jpg" class="contentImg" alt="pokemon">
+
+                        <div class="contentItemBody flex flex-column">
+                            <h5 class="center">Green Pokemon</h5>
+                            <h3 class="center">First line<br>Second line</h3>
+                            <div class="center margin-auto-top">
+                                <a class="btnNav center" href="index.html">Button1</a>
+                                <a class="btnNav center" href="index.html">Button2</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contentItem">
+                        <img src="Images/pokemon.jpg" class="contentImg" alt="pokemon">
+
+                        <div class="contentItemBody flex flex-column">
+                            <h5 class="center">Green Pokemon</h5>
+                            <h3 class="center">First line<br>Second line</h3>
+                            <div class="center margin-auto-top">
+                                <a class="btnNav center" href="index.html">Button1</a>
+                                <a class="btnNav center" href="index.html">Button2</a>
                             </div>
                         </div>
                     </div>
 
 
                 </div>
-                    
+                <div class="flex flex-content-wrapper flex-space-evenly">
+                    <div class="contentItem">
+                        <img src="Images/pokemon.jpg" class="contentImg" alt="pokemon">
+
+                        <div class="contentItemBody flex flex-column">
+                            <h5 class="center">Green Pokemon</h5>
+                            <h3 class="center">Long paragraph Long paragraph Long paragraph Long paragraph Long paragraph </h3>
+                            <div class="center margin-auto-top">
+                                <a class="btnNav center" href="index.html">Button1</a>
+                                <a class="btnNav center" href="index.html">Button2</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contentItem">
+                        <img src="Images/pokemon.jpg" class="contentImg" alt="pokemon">
+
+                        <div class="contentItemBody flex flex-column">
+                            <h5 class="center">Green Pokemon</h5>
+                            <h3 class="center">Long paragraph Long paragraph Long paragraph Long paragraph Long paragraph </h3>
+                            <div class="center margin-auto-top">
+                                <a class="btnNav center" href="index.html">Button1</a>
+                                <a class="btnNav center" href="index.html">Button2</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contentItem">
+                        <img src="Images/pokemon.jpg" class="contentImg" alt="pokemon">
+
+                        <div class="contentItemBody flex flex-column">
+                            <h5 class="center">Green Pokemon</h5>
+                            <h3 class="center">Long paragraph Long paragraph Long paragraph Long paragraph Long paragraph </h3>
+                            <div class="center margin-auto-top">
+                                <a class="btnNav center" href="index.html">Button1</a>
+                                <a class="btnNav center" href="index.html">Button2</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contentItem">
+                        <img src="Images/pokemon.jpg" class="contentImg" alt="pokemon">
+
+                        <div class="contentItemBody flex flex-column">
+                            <h5 class="center">Green Pokemon</h5>
+                            <h3 class="center">Long paragraph Long paragraph Long paragraph Long paragraph Long paragraph </h3>
+                            <div class="center margin-auto-top">
+                                <a class="btnNav center" href="index.html">Button1</a>
+                                <a class="btnNav center" href="index.html">Button2</a>
+                            </div>
+                        </div>
+                    </div>
 
 
+                </div>
+                <div class="flex flex-content-wrapper flex-space-evenly">
+                    <div class="contentItem">
+                        <img src="Images/pokemon.jpg" class="contentImg" alt="pokemon">
+
+                        <div class="contentItemBody flex flex-column">
+                            <h5 class="center">Green Pokemon</h5>
+                            <h3 class="center">Short paragraph </h3>
+                            <div class="center margin-auto-top">
+                                <a class="btnNav center" href="index.html">Button1</a>
+                                <a class="btnNav center" href="index.html">Button2</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contentItem">
+                        <img src="Images/pokemon.jpg" class="contentImg" alt="pokemon">
+
+                        <div class="contentItemBody flex flex-column">
+                            <h5 class="center">Green Pokemon</h5>
+                            <h3 class="center">Short paragraph</h3>
+                            <div class="center margin-auto-top">
+                                <a class="btnNav center" href="index.html">Button1</a>
+                                <a class="btnNav center" href="index.html">Button2</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contentItem">
+                        <img src="Images/pokemon.jpg" class="contentImg" alt="pokemon">
+
+                        <div class="contentItemBody flex flex-column">
+                            <h5 class="center">Green Pokemon</h5>
+                            <h3 class="center">Short paragraph</h3>
+                            <div class="center margin-auto-top">
+                                <a class="btnNav center" href="index.html">Button1</a>
+                                <a class="btnNav center" href="index.html">Button2</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contentItem">
+                        <img src="Images/pokemon.jpg" class="contentImg" alt="pokemon">
+
+                        <div class="contentItemBody flex flex-column">
+                            <h5 class="center">Green Pokemon</h5>
+                            <h3 class="center">Short paragraph</h3>
+                            <div class="center margin-auto-top">
+                                <a class="btnNav center" href="index.html">Button1</a>
+                                <a class="btnNav center" href="index.html">Button2</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
 
 
             </div>
         </div>
-
-    </body>
-
+    </div>
     <footer>
-            <div class="floatleft btnNav"><h1 class ="center ">Language select box</h1> </div>
-            <div class="floatright btnNav"><h1 class ="center ">Text menu</h1> </div>
-            
-    </footer> 
+
+
+        <div class="flex flex-row flex-end padding-top-50 padding-right-20 padding-left-20 flex-content-wrapper">
+            <div class="margin-auto-right">
+                <div class="frame marginTop100">
+                    <select class="center padded10" id="cars" name="cars">
+                        <option class="center">Language select box</option>
+                        <option class="center">German</option>
+                        <option class="center">Latin</option>
+                        <option class="center">English</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <div class ="center padding-right-40">
+                    <div class="flex flex-row">
+                        <div><a class="navItem padding-right-40 padding-left-40">nohref</a></div>
+                        
+                        <div><a class="navItem padding-right-40 padding-left-40" href="index.html">Contact</a></div>
+                        
+                        <div><a class="navItem padding-right-40 padding-left-40" href="index.html">Home</a></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+</body>
+
+
 </html>

@@ -1,0 +1,77 @@
+
+Regulating and Governing the Internet
+	Internet is for the people by the people. Some people bad? How to make internet better.
+	Authoritarian VS Libertarianism
+
+A Short History of the Internet
+	"Survival communications"
+	DOD: fail resistant commincation
+	ARPANET > NSFNET
+	Net became available to corporations.
+	Global host diffusion
+
+
+The Internet's Current architecture
+	TCP IP modal.
+	ipv4
+	Packets
+	Large interconnected networds NSP
+	Routers
+	Packet switches
+	Asynchronous
+	Distributed network
+	Open infrastructure interoperability
+
+
+Net Neutrality
+	End to end principle
+	Core is simply a data movement, transfers files from A to B
+	Competitive neutrality preserved
+	Threatened by big tech
+	
+
+The World Wide Web
+	HTML
+	URL
+	HTTP
+	
+GateKeepers and Search Engines
+	mediated and bias search results
+
+Social Networking
+	Anonymity emboldens persoal insults and derogatory comments
+	Cyberbullying
+	Government intervention on Net
+	But that is based on geography and net is global
+
+Regulating the Infosphere
+	Hard because its geography based. Case of Yahoo nazi
+	Aggresive control. China	
+
+
+A Bottom-Up Approach: Empowered by Code
+	Empowered by annonymity through encryption
+	Internet moderate and organize itself
+	nonintrusive
+	less expensive
+	Antibureaucratic
+	Private parties more restrictive than Government?
+	Some filtering tools from private companies more effective than government propaganda
+	
+
+Internet Governance
+	No one question the need of governace and technical coordination?
+	WWW consortium + IETF: develops technical standards
+	DNS coordination
+	ICANN: international non-profit: determines policy for domain distribution
+	American domination in ICANN
+	
+Contested Sovereignty in Cyber Space
+	Spread and Promote freedom
+	Tor
+	Activist software
+	Invividual VS State
+Discussion Questions
+American Or Australian Libel Law
+Google: The new Monopolist
+Case Study: L'Affair Yahoo!

@@ -1,0 +1,5 @@
+2/9/2022:
+Review before class quiz.
+Github adopts markdown as documentation
+JS popular
+JS object = dictionary / map 

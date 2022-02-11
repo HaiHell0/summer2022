@@ -1,5 +1,13 @@
+
+html {
+    height: 100%;
+    line-height: 1.8;
+    background-color: #f0ead6;
+    font-family: 'Cormorant Garamond', serif;
+}
 body{
-    background-color: #e7e7e7;
+    background-color:#f0ead6;
+    height:1000px;
 }
 
 header{
@@ -11,27 +19,19 @@ footer{
     height:300px;
     background-color:#f0ead6;
 }
-.flex-container{
-    display:flex;
-    flex-direction: row-reverse;
 
+
+.RandomLogo{
+    height: 80px;
+    display: inline;
+    float: left;
 }
+
 .navItem {
     display: inline;
     float: right;
   }
-.navUl{
-    list-style: none;
-    padding-left:60px;
-    padding-right:60px;
-    padding-top: 60px;
-}
-.RandomLogo{
-    height: 80px;
 
-    display: inline;
-    float: left;
-}
 .btnNav{
     padding: 15px 32px;
     padding-left:20px;
@@ -44,10 +44,27 @@ footer{
     color: white;
     background-color: black;
 }
+.frame{
+    border:1px solid black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: auto;
+    font-weight: bold;
+    color: black;
+    background-color: #f0ead6
+}
+.width80{
+    width:80px;
+}
+
 .center {
-    margin: auto;
+    vertical-align: center;
 
     text-align: center;
+
+    align-items: center;
+    
   }
 .blackBorder{
     border: 1px solid black;
@@ -60,18 +77,45 @@ footer{
     justify-content:space-between;
 
 }
+
+
 .flex-column{
     flex-direction: column;
+
 }
+
+
+.flex-row{
+    flex-direction: row;
+}
+
+.flex-reverse-row{
+    flex-direction: row-reverse;
+}
+
+.flex-end{
+    justify-content:end;
+}
+.flex-content-wrapper{
+    flex-wrap:wrap;
+    
+}
+.flex-space-evenly{
+    justify-content:space-evenly;
+}
+.flex > div{
+
+}
+
 
 
 .padded10{
     padding: 10px;
 }
-.input[type=text] {
-    width: 100%;
-    box-sizing: border-box;
-  }
+.margin5{
+    margin:5;
+}
+
 .contentItem{
     width: 200px;
     position: relative;
@@ -81,6 +125,7 @@ footer{
     border: 1px solid black;
     border-radius: 0.25rem;
     background-color: #e7e7e7;
+    margin-bottom:10px;
 }
 .contentItemBody{
     flex: auto;
@@ -94,24 +139,138 @@ footer{
     justify-content:space-evenly;
 }
 
+/*this is copied code*/
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
 
-.left {
-    position:sticky;
-    width: 20%;
+.content,
+.menu {
+    border: 3px solid black;
+    padding: 15px;
+    background-color: #fff;
+}
+
+.content {
+    width: 75%;
+}
+
+.menu {
+    width: 15%;
+    height: 550px;
+}
+
+.menu {
     
-    top:0;
-    position: -webkit-sticky;
-    background-color: yellow;
-  }
-  
- .right {
-    width: 80%;
-    background-color: grey;
-    height: 2000px;
-  }
-.floatright{
-    float: right;
+    position: sticky;
+    top: 0;
 }
-.floatleft{
-    float: left;
+
+
+.margin-auto-left{
+    margin-left:auto;
 }
+.margin-auto-right{
+    margin-right:auto;
+}
+.margin-auto-top{
+
+    margin-top:auto;
+}
+.margin-auto-botton{
+    margin-bottom:auto;
+}
+
+a:link{
+    font-style : none;
+    background-color:black;
+    color:white;
+}
+a:visited{
+    background-color: aqua;
+    color: black;
+}
+a:hover{
+    background-color:aquamarine;
+    color:black;
+}
+a:active{
+    background-color:red;
+    color:black;
+}
+.bold{
+    font-weight: bold;
+}
+
+
+.padding-top-50{
+    padding-top:70px;
+}
+.padding-left-40{
+    padding-left:40px;
+}
+.padding-right-40{
+    padding-right:40px;
+}
+.padding-bottom-40{
+    padding-bottom:40px;
+}
+
+
+@media only screen and (max-width: 740px) {
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .content{
+        width:100%;
+    }
+    .menu{
+        width:100%;
+        position:relative;
+        top: 0;
+    }
+
+    nav .btnNav{
+        margin: auto;
+        padding: auto;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        font-weight: bold;
+        color: black;
+        background-color: white;
+    }
+    #nav{
+        flex-direction: column;
+    }
+
+    h1{
+        font-size :20px;
+    }
+    a:link{
+        font-style : none;
+        background-color:black;
+        color:white;
+    }
+    a:visited{
+        background-color: aqua;
+        color: black;
+    }
+    a:hover{
+        background-color:aquamarine;
+        color:black;
+    }
+    a:active{
+        background-color:red;
+        color:black;
+    }
+    .flex{
+        justify-content:center;
+    }
+    .margin-auto-right{
+        margin: auto;
+    }
+  }
